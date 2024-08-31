@@ -12,10 +12,13 @@ body {
 .container {
   text-align: center;
 }
+div.text {
+  position: relative;
+}
 input[type="number"] {
   padding: 20px 0px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
   border-bottom: 2px solid green;
   transition: all 0.5s;
@@ -30,4 +33,43 @@ input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
-
+button {
+  font-size: 1.2em;
+  margin: 96px 0px 20px 0px;
+  width: 125px;
+  height: 125px;
+  /* padding: 40px; */
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(0, 247, 255);
+  transition: all 0.4s;
+}
+button:hover {
+  background-color: rgb(0, 214, 221);
+}
+div.text .active {
+  background-color: rgb(0, 138, 142);
+}
+svg {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 49%);
+  z-index: -5;
+}
+circle {
+  fill: none;
+  stroke: url(#grad);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 0;
+  animation: timer 5s linear forwards;
+}
+@keyframes timer {
+  100% {
+    stroke-dashoffset: 440;
+  }
+}
