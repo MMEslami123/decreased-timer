@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  text-align: center;
+}
+input[type="number"] {
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid green;
+  transition: all 0.5s;
+}
+input[type="number"]:focus {
+  outline: 2px solid green;
+  box-shadow: inset 0px 0px 12px 10px rgb(134, 243, 134);
+  border-radius: 30px;
+}
+
